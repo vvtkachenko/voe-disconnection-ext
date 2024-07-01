@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Disconnections Extension",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "voe-logo.png"
+    },
+    "permissions": ["scripting", "storage"],
+    "content_scripts": [
+    {
+      "js": ["scripts/save-form.js"],
+      "matches": [
+        "https://www.voe.com.ua/disconnection/detailed"
+      ]
+    }
+  ]
+  }
